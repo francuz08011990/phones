@@ -1,0 +1,32 @@
+{% load static %}
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+<link rel="stylesheet" type="text/css" href="{% static 'models/background_brand.css' %}"/>
+<title>Модели</title>
+{#</head>#}
+<body class= {{ class }}>
+<h1> Модели: {{ phone.brand }}</h1>
+
+<ol>
+
+{% for type in types %}
+
+    <h2>
+        <a href="{% url 'model_of_phone:image_of_phone' type.id %}">
+            {{ type.name_of_model }}
+        </a>
+    </h2>
+    <div>
+        <img src="{{ type.image.url }}" width="240px"/>
+    </div>
+    <p>Цена - {{ type.price }} грн </p>
+
+    <p>Старт продаж -  {{ type.start_of_sales }}</p>
+
+{% endfor %}
+
+</ol>
+</body>
+{#</html>#}

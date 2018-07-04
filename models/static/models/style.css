@@ -1,0 +1,12 @@
+li a {
+    color: #000000;
+}
+
+body {
+    background: url(image/index.jpg);
+    background-size: cover;
+}
+
+h1 {
+    color: rgb(255, 252, 249);
+}

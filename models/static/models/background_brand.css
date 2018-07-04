@@ -1,0 +1,41 @@
+.honor {
+    background: url(image/honor.jpg);
+
+}
+
+.lg {
+    background: url(image/LG.png);
+    background-size: cover;
+}
+
+.sony {
+    background: url(image/sony.jpg);
+    background-size: cover;
+}
+
+.apple {
+    background: url(image/apple.jpeg);
+    background-size: cover;
+}
+
+.samsung {
+    background: url(image/samsung.jpg);
+    background-size: cover;
+}
+
+.meizu {
+    background: url(image/meizu.jpg);
+    background-size: cover;
+}
+
+h1 {
+    color: #79aec8;
+}
+
+h2{
+    color: #eee2e0;
+}
+
+p {
+    color: #eee2e0;
+}

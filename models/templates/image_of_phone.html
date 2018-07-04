@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css"/>
+    <title>Фото телефона</title>
+</head>
+<body>
+{% for type in types %}
+    <img src="{{ type.image.url }}"/>
+{% endfor %}
+</body>
+</html>
